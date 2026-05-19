@@ -12,6 +12,7 @@ const io = new Server(server, {
   cors: {
     origin: process.env.ALLOWED_ORIGIN,
     methods: ['GET', 'POST', 'PATCH'],
+    credentials: true,
   },
 });
 

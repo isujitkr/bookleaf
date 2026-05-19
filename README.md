@@ -134,9 +134,6 @@ npm install
 cp .env.example .env
 # Open .env and fill in MONGODB_URI and GEMINI_API_KEY
 
-# Seed the database with sample authors, books, admins, and tickets
-npm run seed
-
 # Start development server on port 8000
 npm run dev
 ```

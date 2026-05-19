@@ -8,7 +8,7 @@ const { generateToken } = require("../utils/jwt");
 const COOKIE_OPTIONS = {
   httpOnly: true,
   secure: true,
-  sameSite: "strict",
+  sameSite: "None",
   maxAge: 7 * 24 * 60 * 60 * 1000,
 };
 const attachTokenCookie = (res, token) => {

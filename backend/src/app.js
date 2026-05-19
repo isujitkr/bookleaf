@@ -5,6 +5,8 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const routes = require('./routes/index');
 
+app.set('trust proxy', 1)
+
 app.use(cors({
   origin: process.env.ALLOWED_ORIGIN ? process.env.ALLOWED_ORIGIN : '*',
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],

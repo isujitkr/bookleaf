@@ -9,11 +9,7 @@ export function useSocket(onEvent) {
       withCredentials: true,
     });
 
-    console.log('Connecting to socket at:', import.meta.env.VITE_SOCKET_URL);
-
     socketRef.current = socket;
-
-    console.log('Socket initialized:', socket);
 
     socket.on('connect', () => {
       console.log('Socket connected');

@@ -16,7 +16,7 @@ const attachTokenCookie = (res, token) => {
 };
 
 const clearTokenCookie = (res) => {
-  res.clearCookie("accessToken");
+  res.clearCookie("accessToken", COOKIE_OPTIONS);
 };
 
 exports.authorRegister = async (req, res, next) => {
